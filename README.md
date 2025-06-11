@@ -1,6 +1,6 @@
 # Sentiment Analysis — Amazon Product Reviews
 
-This repository performs sentiment analysis on Amazon product reviews using pre-trained BERT embeddings and an XGBoost classifier. The workflow includes data preprocessing, embedding generation, visualization, classification, and evaluation. All code and implementation were developed step-by-step with the assistance of ChatGPT.
+This repository performs sentiment analysis on Amazon product reviews using pre-trained BERT embeddings and an XGBoost classifier. The workflow includes data preprocessing, embedding generation, visualization, classification, and evaluation. All code and implementation were developed step-by-step by giving instructions/prompts to the ChatGPT basic version.
 
 ---
 
