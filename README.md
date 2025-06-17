@@ -33,10 +33,10 @@ This suggests the BERT-based embeddings did not fully capture the positive senti
 ## Evaluating Model Response with finetuning
 
 - **Metrics**:
-  - Accuracy: 0.9644
-  - Precision: 0.9644
-  - Recall: 0.9644
-  - F1 Score: 0.9644
+  - Accuracy: `0.9644`
+  - Precision: `0.9644`
+  - Recall: `0.9644`
+  - F1 Score: `0.9644`
 
 
 
