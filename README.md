@@ -6,6 +6,13 @@ This repository performs sentiment analysis on Amazon product reviews using pre-
 
 ## Evaluating Model Response without finetuning
 
+- **Metrics**:
+  - Accuracy: `89.11`
+  - Precision: `0.8912`
+  - Recall: `0.8911`
+  - F1 Score: `0.8911`
+  - ROC AUC: `0.9574`
+
 **original text** = "Good product at **reasonable price:** Though the output of this power supply is lower than the Apple supply, \
 it seems to work fine--and it is very reasonably priced. Too bad that Amazon stopped carrying the supply."
 
@@ -23,22 +30,16 @@ The model incorrectly classified the original review as negative (0), but correc
 **Insight:**
 This suggests the BERT-based embeddings did not fully capture the positive sentiment of the phrase **reasonable price**, highlighting a limitation in subtle semantic understanding.
 
-- **Metrics**:
-  - Accuracy: `0.8911`
-  - Precision: `0.8912`
-  - Recall: `0.8911`
-  - F1 Score: `0.8911`
-  - ROC AUC: `0.9574`
+**Fine-tuned Model:**
+The fine-tuned model classifies the few test samples with `100%` accuracy.
 
 ## Evaluating Model Response with finetuning
 
 - **Metrics**:
-  - Accuracy: `0.9644`
+  - Accuracy: `96.44`
   - Precision: `0.9644`
   - Recall: `0.9644`
   - F1 Score: `0.9644`
-
-
 
 ## 📂 Dataset
 
