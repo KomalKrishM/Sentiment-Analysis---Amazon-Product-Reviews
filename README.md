@@ -82,5 +82,7 @@ This suggests the BERT-based embeddings did not fully capture the positive senti
 
 ---
 
-### 5. **Evaluation**
+### 5. **Fine-tuning**
+
+- **Script**: `fine_tuning_BERT.py`, `Test_fine_tuned_BERT.py`
 
