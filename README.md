@@ -1,10 +1,10 @@
 # Sentiment Analysis — Amazon Product Reviews
 
-This repository performs sentiment analysis on Amazon product reviews using pre-trained BERT embeddings and an XGBoost classifier. The workflow includes data preprocessing, embedding generation, visualization, classification, and evaluation. All code and implementation were developed step-by-step by giving instructions/prompts to the ChatGPT basic version.
+This repository performs sentiment analysis on Amazon product reviews using pre-trained 110M parameter BERT embeddings and an XGBoost classifier, and also fine-tuned the 66M parameter BERT model with additional classification layer. The code was executed on M3 MAC 36GB Memory. All code and implementation were developed step-by-step by giving instructions/prompts to the ChatGPT basic version.
 
 ---
 
-## Evaluating Model Response
+## Evaluating Model Response without finetuning
 
 **original text** = "Good product at **reasonable price:** Though the output of this power supply is lower than the Apple supply, \
 it seems to work fine--and it is very reasonably priced. Too bad that Amazon stopped carrying the supply."
@@ -22,6 +22,21 @@ The model incorrectly classified the original review as negative (0), but correc
 
 **Insight:**
 This suggests the BERT-based embeddings did not fully capture the positive sentiment of the phrase **reasonable price**, highlighting a limitation in subtle semantic understanding.
+
+- **Metrics**:
+  - Accuracy: `0.8911`
+  - Precision: `0.8912`
+  - Recall: `0.8911`
+  - F1 Score: `0.8911`
+  - ROC AUC: `0.9574`
+
+## Evaluating Model Response with finetuning
+
+- **Metrics**:
+  - Accuracy: 0.9644
+  - Precision: 0.9644
+  - Recall: 0.9644
+  - F1 Score: 0.9644
 
 
 
@@ -68,19 +83,4 @@ This suggests the BERT-based embeddings did not fully capture the positive senti
 ---
 
 ### 5. **Evaluation**
-- **Metrics**:
-  - Accuracy: `0.8911`
-  - Precision: `0.8912`
-  - Recall: `0.8911`
-  - F1 Score: `0.8911`
-  - ROC AUC: `0.9574`
 
-```text
-               precision    recall  f1-score   support
-
-           0       0.88      0.90      0.89    200000
-           1       0.90      0.88      0.89    200000
-
-    accuracy                           0.89    400000
-   macro avg       0.89      0.89      0.89    400000
-weighted avg       0.89      0.89      0.89    400000
