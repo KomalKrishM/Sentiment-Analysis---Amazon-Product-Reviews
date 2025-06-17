@@ -1,6 +1,6 @@
 # Sentiment Analysis — Amazon Product Reviews
 
-This repository performs sentiment analysis on Amazon product reviews using pre-trained 110M parameter BERT embeddings and an XGBoost classifier, and also fine-tuned the 66M parameter BERT model with additional classification layer. The code was executed on M3 MAC 36GB Memory. All code and implementation were developed step-by-step by giving instructions/prompts to the ChatGPT basic version.
+This repository performs sentiment analysis on Amazon product reviews using pre-trained 110M parameter BERT embeddings and an XGBoost classifier, and also fine-tuned the 66M parameter BERT model with additional classification layer.  The fine-tuned model improves the accuracy by `7%`. The code was executed on M3 MAC 36GB Memory. All code and implementation were developed step-by-step by giving instructions/prompts to the ChatGPT basic version.
 
 ---
 
