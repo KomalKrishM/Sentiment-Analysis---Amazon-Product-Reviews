@@ -13,7 +13,7 @@ This repository performs sentiment analysis on Amazon product reviews using pre-
   - F1 Score: `0.8911`
   - ROC AUC: `0.9574`
 
-**original text** = "Good product at **reasonable price:** Though the output of this power supply is lower than the Apple supply, \
+***original text*** = "Good product at **reasonable price: Though the output of this power supply is lower than the Apple supply, \
 it seems to work fine--and it is very reasonably priced. Too bad that Amazon stopped carrying the supply."
 
 **original_label** = 1
